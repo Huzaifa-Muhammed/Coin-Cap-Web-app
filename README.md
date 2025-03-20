@@ -20,10 +20,10 @@ Fetches live data from the **CoinCap API** and displays key details about the to
 ## 🎥 Screenshots
 
 ### 🔵 Dark Mode
-![Dark Mode Screenshot](screenshot1.png)
+![Dark Mode Screenshot](screenshots/dark_mode.png)
 
 ### ⚪ Light Mode
-![Light Mode Screenshot](screenshot2.png)
+![Light Mode Screenshot](screenshots/light_mode.png)
 
 ---
 
@@ -41,4 +41,4 @@ Fetches live data from the **CoinCap API** and displays key details about the to
 ### 🔽 Clone the Repository  
 ```sh
 git clone  https://github.com/Huzaifa-Muhammed/Coin-Cap-Web-app.git
-cd Coin Cap web app
+cd Coin-Cap-Web-app
