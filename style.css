@@ -1,0 +1,155 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a2e);
+    color: white;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    color: black;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode header {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.light-mode header {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #00ffcc;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/* Theme Toggle & Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#themeToggle {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.dark-mode #themeToggle {
+    background: #222;
+    color: white;
+}
+
+.light-mode #themeToggle {
+    background: #ddd;
+    color: black;
+}
+
+/* Search & Filter */
+#searchInput, #filterSelect {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+#searchInput {
+    width: 200px;
+}
+
+#filterSelect {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Crypto Container */
+.crypto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Individual Crypto Card */
+.crypto-card {
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dark-mode .crypto-card {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 255, 204, 0.3);
+}
+
+.light-mode .crypto-card {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.crypto-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Crypto Symbol */
+.crypto-symbol {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.dark-mode footer {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.light-mode footer {
+    background: rgba(255, 255, 255, 0.8);
+}
